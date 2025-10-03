@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Project 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="media/pic1.jpg"></div>
+        <div class="swiper-slide"><img src="media/pic2.jpg"></div>
+        <div class="swiper-slide"><img src="media/pic3.jpg"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="tools-area">
+      <button id="addText">Add Text</button>
+      <button id="removeText">Remove Text</button>
+      <button id="copyText">Copy Text</button>
+
+      <label>Font:
+        <select id="fontSelect">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Impact">Impact</option>
+        </select>
+      </label>
+
+      <label>Size:
+        <input type="number" id="fontSize" value="24" min="10" max="100">
+      </label>
+
+      <label>Rotate:
+        <input type="number" id="rotate" value="0">
+      </label>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

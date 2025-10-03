@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.swiper {
+    width: 402px;
+    height: 714px;
+    border-radius: 12px;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text overlays */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: move;
+    user-select: none;
+    padding: 4px 8px;
+    white-space: nowrap;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border: 2px;
+}
+
+.text-overlay.active {
+    border: 2px black dotted;
+}
+
+.tools-area {
+display: grid;
+margin: auto;
+gap: 12px;
+}
+
+/* Resize handle at bottom-right corner of text */
+.text-overlay .resize-handle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  bottom: -6px;
+  right: -6px;
+  cursor: se-resize;
+  border-radius: 2px;
+}
+
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+label {
+    font-size: 14px;
+}
